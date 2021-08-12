@@ -81,7 +81,7 @@ header .navbar li a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('/nodeimage/restaurant.jpg');
+    background-image: url('./nodeimage/restaurant.jpg');
     background-size: cover;
     
 }

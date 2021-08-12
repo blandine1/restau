@@ -1,0 +1,544 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+p{
+    font-weight: 300;
+    color:  #111!important;
+}
+
+header{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    padding: 20px 10px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: 0.5s;
+}
+
+header a{
+    color: #fff;
+}
+
+.logo{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 2em;
+    /* color: #fff; */
+}
+
+.logo span{
+     color: #fb911f;
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar  a{
+   color: #fff; 
+   text-decoration: none;
+   font-weight: 700;
+   margin-left: 30px;
+}
+
+.btn-reserve{
+    padding: 10px 20px;
+    background: #fb911f;
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-reserve:hover{
+    background: #d87710;
+    transition: ease-out;
+}
+
+header .navbar li a:hover{
+    color: #fb911f;
+    border-bottom: 2px solid #fb911f;
+}
+
+
+/* debut de la baniere */
+.baniere{
+    position: relative;
+    widows: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('/nodeimage/restaurant.jpg');
+    background-size: cover;
+    
+}
+
+.baniere .contenu{
+    max-width: 70%;
+    text-align: center;
+}
+.baniere .contenu h2{
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+.baniere .contenu p{
+    color: #ffff!important;
+    font-size: 1.2em;
+}
+
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 20px;
+    background: #fb911f;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.btn2{
+    font-size: 1em;
+    color: #fff;
+    padding: 10px 20px;
+    background: #2a4963;
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    text-transform: uppercase;
+    margin-left: 10px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+}
+
+section{
+    padding: 100px;
+}
+
+.tshirt{
+    height: 30rem;
+    width: 30rem;
+}
+
+.row{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.row .col50{
+    position: relative;
+    width: 49%;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .col50 h2{
+    margin-bottom: 20px;
+}
+
+.title-texte{
+    color: #000;
+    font-size: 2rem;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.title-texte span{
+    color: #fb911f;
+    font-size: 1.5em;
+    font-weight: 700px;
+}
+
+.menu .ndolet,.nkui,.kok,.pistache,.DG,.pizza,.koki,.bongo{
+    height: 13rem;
+    width: 17rem;
+}
+
+.titre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu{
+    margin-top: -175px;
+}
+
+.menu .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu .contenu .box{
+    width: 250px;
+    margin: 20px;
+    border: 20 solid #fff;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+   
+}
+
+.menu .contenu .box img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+
+}
+section .titre >.btn1{
+    margin-top: 10px;
+}
+
+.menu .contenu .box .text{
+  display: flex;
+  justify-content: center;
+}
+
+.menu .contenu .box .text h3{
+    font-weight: 400px;
+}
+
+.expert{
+    margin-top: -100px;
+}
+
+.expert .contenu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.expert .contenu .box{
+    width: 250px;
+    margin: 15px;
+}
+
+.expert .contenu .box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+}
+
+.expert .contenu .box .text{
+    text-align: center;
+}
+
+.temoignage .contenu p{
+    color: #111;
+}
+
+.temoignage{
+    
+    background-image: url('./nodeimage/bg3.jpg');
+    background-size: cover;
+    margin-top: -60px;
+   
+}
+
+.temoignage .contenu{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   
+}
+
+.temoignage .contenu .box{
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 20px 15px 35px rgb(0, 0, 0, 0.9);
+    width: 300px;
+    margin-left: 20px;
+    padding: 40px;
+}
+
+.temoignage .titre{
+   margin-top:-30px;
+}
+
+.temoignage .titre >h2,p{
+  color: #fff;
+}
+
+.temoignage .contenu{
+    margin-top: 15px;
+    align-items: center;
+}
+
+.temoignage .contenu .box .imbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.temoignage .contenu .box .imbox img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    top: 3px;
+}
+
+.temoignage .contenu .text h3{
+    display: flex;
+    justify-content: center;
+    color: #fb911f;
+}
+
+.temoignage .contenu .box .text{
+    text-align: center;
+    color: #666;
+    font-style: italic;
+}
+
+.temoignage .titre p{
+    color: #fff!important;
+}
+
+.contact{
+    background-image: url('./nodeimage/ctform.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    width: 100%;
+    background-position: unset;
+}
+
+.formulaire{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 450px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 35%;
+}
+
+.formulaire h3{
+    color: #111;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.formulaire .inputboite input,
+.formulaire .inputboite textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    resize: none;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.formulaire .inputboite input[type="submit"]{
+   font-size: 1em;
+   font-weight: 700;
+   color: #fff;
+   background: #d87710;
+   display: inline-block;
+   cursor: pointer;
+   text-transform: uppercase;
+   text-decoration: none;
+   outline: none;
+   border: none;
+}
+
+.formulaire .inputboite input[type="submit"]:hover{
+    letter-spacing: 2px;
+    transform: 0.7s ease-in-out ;
+}
+
+.cpr{
+    padding: 20px 40px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background: rgb(228, 222, 222);
+}
+
+.cpr a{
+    text-decoration: none;
+}
+
+.cpr p{
+    text-align: center;
+}
+
+.contact .titre-text span{
+    color: #d87710;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 10px 10px;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+header.sticky .logo{
+    color: #000;
+}
+
+header.sticky .navbar li a{
+    color: #000;
+}
+
+header.sticky .navbar li a:hover{
+    color: #fb911f;
+}
+
+@media (max-width: 991px){
+
+    header, header.ticky{
+        padding: 10px 20px;
+    }
+
+    header .navbar li{
+        margin-left: 0px;
+    }
+
+    header .navbar li a{
+        text-decoration: none;
+        color: #111;
+        font-size: 1.6em;
+        font-weight: 300;
+    }
+
+    .navbar{
+        display: none;
+    }
+
+    section{
+        padding: 20px;
+    }
+
+    .baniere .contenu h2{
+        font-size: 2rem;
+    }
+
+    .baniere .contenu .btn{
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+    }
+
+    .baniere .contenu .btn1,.btn2{
+        letter-spacing: unset;
+    }
+
+    .tshirt{
+        margin-left: 20%;
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .baniere .contenu .btn .btn1:hover{
+        letter-spacing: 1px;
+    }
+
+    .contenu p{
+        font-size: 2rem;
+    }
+
+    .expert{
+        margin-top: 0px;
+    }
+
+    .menu{
+        margin-top: 0px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contenu{
+      display: grid;
+      grid-gap: 8px;
+    }
+
+    .temoignage .titre{
+        margin:10px;
+    }
+
+    .temoignage{
+        margin: 6px;
+    }
+
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background-image: url('./nodeimage/menu.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+
+    .menuToggle.active{
+        background-image: url('./nodeimage/close.png');
+        background-repeat: no-repeat;
+        background-size: 30px;
+        background-origin: center;
+    }
+
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+
+    .row .col50 {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .title-texte {
+        font-size: 1rem;
+    }
+
+    .formulaire{
+        margin-left: 7%;
+    }
+}
+
+
+
+
+
+
